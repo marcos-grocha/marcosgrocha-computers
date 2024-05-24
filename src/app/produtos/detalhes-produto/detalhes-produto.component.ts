@@ -16,7 +16,7 @@ export class DetalhesProdutoComponent implements OnInit {
   
 
   constructor(
-    private privateService: ProdutosService,
+    private produtosService: ProdutosService,
     private route: ActivatedRoute,
     private notificacaoService: NotificacaoService,
     private carrinhoService: CarrinhoService
@@ -24,8 +24,8 @@ export class DetalhesProdutoComponent implements OnInit {
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
-    const produtoId = Number(routeParams.get("id"));
-    this.produto = this.privateService.getOne(produtoId);
+    const produtoId = Number(routeParams.get('id'));
+    this.produto = this.produtosService.getOne(produtoId);
   }
 
   adicionarAoCarrinho() {

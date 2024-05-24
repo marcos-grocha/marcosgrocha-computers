@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ProdutosModule } from './produtos/produtos.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ProdutosModule,
     BrowserAnimationsModule,
     MatSnackBarModule
   ],
