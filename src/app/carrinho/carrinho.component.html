@@ -14,10 +14,7 @@
         </li>
     </ul>
     <h2 class="cart-total">Total: {{ total | currency: "BRL" }}</h2>
-    <button class="buy-button">Comprar</button>
+    <button class="buy-button" (click)="comprar()">Comprar</button>
 </div>
 
-<ng-template #semProdutos>
-    <!-- <h2 class="cart-title">Carrinho</h2> -->
-    <p>Não há produtos no carrinho</p>
-</ng-template>
+<ng-template #semProdutos>Não há produtos no carrinho</ng-template>
