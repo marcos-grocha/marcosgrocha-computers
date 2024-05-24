@@ -8,21 +8,23 @@ import { FooterComponent } from './footer/footer.component';
 import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { ProdutosModule } from './produtos/produtos.module';
+import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NaoEncontradoComponent
+    NaoEncontradoComponent,
+    BarraPesquisaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProdutosModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
